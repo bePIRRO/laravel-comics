@@ -1,16 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DC COMICS</title>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-</head>
-<body>
-    @include('includes.header')
-    <h1>Home</h1>
+@extends("layouts.main");
 
-    <script src="{{ asset('js/app.js') }}"></script>
-</body>
-</html>
+@section("content")
+
+
+
+        <!-- current series tag -->
+        <div class="tag current">
+            CURRENT SERIES
+          </div>
+      
+          <!-- cards container -->
+          <div class="container">
+            <div class="row">
+              <div class="col">
+
+            @foreach ($comics as $comic)
+                <div class="card">
+                    <h3>{{ $comic["title"] }}</h3>
+                    <img src="serie.thumb" alt="serie.series" />
+                    <h5> serie.series</h5>
+                </div>
+             @endforeach
+
+              </div>
+            </div>
+      
+            <div class="tag btn">
+              LOAD MORE
+            </div>
+          </div>
+@endsection
+

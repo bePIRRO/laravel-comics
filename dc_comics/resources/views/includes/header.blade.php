@@ -29,12 +29,12 @@
     <div id="hero"></div>
   </header>
 
-  <style>
-    .navbar {
+<style>
+.navbar {
     background-color: #fff;
     }
 
-.navbar .row {
+  .navbar .row {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -82,4 +82,4 @@ a {
     background-size: cover;
 }
 
-  </style>
+</style>

@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DC COMICS</title>
-</head>
-<body>
-    @include('includes.header')
-    <h1>Comics</h1>
-</body>
-</html>
+@extends("layouts.main");
+@section("title", "Comics")
+
+@section("content")
+    <h1>comics</h1>
+@endsection
