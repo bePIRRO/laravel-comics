@@ -1,7 +1,5 @@
 @extends("layouts.main");
-
 @section("content")
-
 
 
         <!-- current series tag -->
@@ -14,13 +12,13 @@
             <div class="row">
               <div class="col">
 
-            @foreach ($comics as $comic)
+            {{-- @foreach ($comics as $comic) --}}
                 <div class="card">
-                    <h3>{{ $comic["title"] }}</h3>
+                    {{-- <h3>{{ route($comic["title"])}}</h3> --}}
                     <img src="serie.thumb" alt="serie.series" />
                     <h5> serie.series</h5>
                 </div>
-             @endforeach
+             {{-- @endforeach --}}
 
               </div>
             </div>
