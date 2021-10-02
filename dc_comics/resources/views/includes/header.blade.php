@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col">
           <a href=" {{ url('/') }} " id="logo"
-            ><img src="@/img/dc-logo.png" alt="DC Comics"
+            ><img src="../../../images/dc-logo.png" alt="DC Comics"
           /></a>
         </div>
         <div class="col">

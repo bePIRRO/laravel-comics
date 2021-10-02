@@ -7,6 +7,7 @@
     <title>DC COMICS</title>
 </head>
 <body>
+    @include('includes.header')
     <h1>Comics</h1>
 </body>
 </html>
