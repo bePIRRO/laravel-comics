@@ -1,61 +1,113 @@
+.navbar {
+  background-color: #fff;
+}
+
+.navbar .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+.active,
+a:hover:not(#logo) {
+  color: #0282f9;
+  border-bottom: 2px solid #0282f9;
+}
+
+.row div {
+  display: inline-block;
+  height: auto;
+}
+
+img {
+  width: auto;
+  max-height: 80px;
+}
+
+.col,
+ul,
+li {
+  height: auto;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+#hero {
+  width: 100%;
+  height: 400px;
+  background-image: url("../../../images/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 main {
-    background-color: #1c1c1c;
-    margin: 0;
+  background-color: #1c1c1c;
+  margin: 0;
 }
 
 .container {
-    height: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 main .row {
-    margin-top: 50px;
-    align-items: center;
-    flex-wrap: wrap;
+  margin-top: 50px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .container .col {
-    align-items: center;
-    padding: 20px;
-    width: 1500px;
+  align-items: center;
+  padding: 20px;
+  width: 1500px;
 }
 
 .tag {
-    background-color: #0282f9;
-    display: inline;
-    color: #fff;
-    padding: 1.05rem;
-    box-shadow: black 5px 2px 2px;
+  background-color: #0282f9;
+  display: inline;
+  color: #fff;
+  padding: 1.05rem;
+  box-shadow: black 5px 2px 2px;
 }
 
 .btn {
-    cursor: pointer;
-    align-self: center;
+  cursor: pointer;
+  align-self: center;
 }
 
 .current {
-    position: relative;
-    left: 20%;
+  position: relative;
+  left: 20%;
 }
 
 .card {
-    color: #fff;
-    margin: 20px;
-    max-width: 200px;
-    min-height: 250px;
+  color: #fff;
+  margin: 20px;
+  max-width: 200px;
+  min-height: 250px;
 }
 
 .card img {
-    min-width: 200px;
-    max-width: 200px;
-    min-height: 200px;
-    max-height: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 200px;
+  max-height: 200px;
 }
