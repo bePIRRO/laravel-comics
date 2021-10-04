@@ -10,7 +10,7 @@
 }
 
 .active,
-a:hover:not(#logo) {
+header a:hover:not(#logo) {
   color: #0282f9;
   border-bottom: 2px solid #0282f9;
 }
@@ -99,10 +99,15 @@ main .row {
 }
 
 .card {
-  color: #fff;
   margin: 20px;
   max-width: 200px;
   min-height: 250px;
+}
+.card a {
+  color: #fff;
+}
+.card a:hover {
+  text-decoration: underline;
 }
 
 .card img {

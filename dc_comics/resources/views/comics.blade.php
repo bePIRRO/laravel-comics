@@ -1,5 +1,5 @@
 @extends("layouts.main");
-@section("title", "Comics")
+@section("title", "Comics");
 
 @section("content")
             <!-- current series tag -->
@@ -14,10 +14,13 @@
     
                 @foreach ($comics as $comic)
                     <div class="card">
-                        
-                        <img src="{{ $comic["thumb"]}}" alt="{{ $comic["series"]}}" />
-                        <h5>{{ $comic["title"]}}</h5>
-                    </div>
+                      <a href="{{ url("/comics/$loop->index") }}">
+                        <figure>
+                          <img src="{{ $comic["thumb"]}}" alt="{{ $comic["series"]}}" />
+                          <h5>{{ $comic["title"]}}</h5>
+                        </figure>
+                      </a>
+                      </div>
                  @endforeach
     
                   </div>
