@@ -12,6 +12,9 @@
 .active,
 header a:hover:not(#logo) {
   color: #0282f9;
+}
+
+li:hover {
   border-bottom: 2px solid #0282f9;
 }
 
@@ -25,13 +28,9 @@ img {
   max-height: 80px;
 }
 
-.col,
 ul,
 li {
-  height: auto;
-}
-
-li {
+  min-height: 100px;
   list-style-type: none;
   display: inline;
 }
@@ -56,7 +55,7 @@ a {
   box-sizing: border-box;
 }
 
-main {
+.comics {
   background-color: #1c1c1c;
   margin: 0;
 }
@@ -115,4 +114,39 @@ main .row {
   max-width: 200px;
   min-height: 200px;
   max-height: 200px;
+}
+
+.description {
+  max-width: 800px;
+  line-height: 1.5em;
+}
+
+.buy,
+#check {
+  background-color: #55ba59;
+  color: #fff;
+  border: none;
+}
+
+.col .buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  min-height: 50px;
+  padding-left: 20px;
+  font-size: 1em;
+  box-shadow: #357739 0px 1px;
+}
+
+#check {
+  text-align: center;
+  min-height: 50px;
+  border-left: 1px solid #000;
+  padding-left: 20px;
+  margin-right: 20px;
+}
+
+.avaible {
+  color: #bafd9c;
 }

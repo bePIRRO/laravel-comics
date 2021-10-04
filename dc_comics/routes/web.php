@@ -17,8 +17,9 @@ Route::get("/", function () {
     return view("home");
 })->name("home");
 
+
+//! COMICS
 Route::get("/comics", function () {
-    
     $comics = [
         [
             "title" => "Action Comics #1000: The Deluxe Edition",
@@ -235,13 +236,17 @@ Route::get("/comics", function () {
     return view('comics', ['comics' => $comics]);
 })->name('comics');
 
+
 Route::get("/comics/{id}", function ($id) {
 
-    if (is_numeric($id) && $id >= 0 && $id < count($comics)){
-
+    if (is_numeric($id) && $id >= 0 && $id < count($comics)) {
+        $comic = $comics[$id];
+        return view("comic", compact("comic"));
+    } else {
+        abort("404");
     }
-
-    $comics = config("products");
-    $comic = $comics[$id];
-    return view("comic", compact("comic"));
 })->name("comic");
+
+Route::get("/template", function () {
+    return view("comic_template");
+})->name("comic_template");
