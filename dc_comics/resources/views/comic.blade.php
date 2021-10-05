@@ -94,6 +94,7 @@
                            <span>{{$comic["sale_date"]}}</span>
                         </div>
                     </div>
+                    <hr class="divide">
                 </div>
             </div>
         </div>
