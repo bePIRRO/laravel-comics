@@ -36,6 +36,6 @@ Route::get("/comics/{id}", function ($id) {
     }
 })->name("comic");
 
-Route::get("/template", function () {
+/*Route::get("/template", function () {
     return view("comic_template");
-})->name("comic_template");
+})->name("comic_template");*/
