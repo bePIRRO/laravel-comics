@@ -150,3 +150,30 @@ main .row {
 .avaible {
   color: #bafd9c;
 }
+
+.container-fluid {
+  background-color: #f6f6f6;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info span {
+  color: #00a9d9;
+}
+
+.info .col {
+  max-width: 750px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info h4 {
+  display: inline-block;
+}
+
+.divide {
+  border-color: #e3e3e3;
+}
